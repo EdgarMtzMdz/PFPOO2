@@ -1,0 +1,149 @@
+@model InventarioModel;
+
+@{
+    ViewData["Title"] = "VentasPunto";
+}
+
+
+<div class="container">
+    <div class="row">
+        @*Contenedores para mostrar Nombre o codigo del empleado*@
+        <div class="col text-right">
+            <p class="label-gris">Nombre Del Empleado</p>
+        </div>
+        @*Contenedor que muestra nombre del cliente*@
+        <div class="col text-right">
+            <p class="label-grisD">Nombre Del Cliente</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <div class="row">
+            Logo
+        </div>
+        <div class="row">
+            Opciones
+        </div>
+    </div>
+
+    @*Muestra los productos marcados*@
+
+    <div class="col-6">
+        <div class="row">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img lass="img-fluid mb-2" style="width: 80px; height: 80px" alt="profile picture"
+                                src="/imagenes/placeH.png" @*PlaceHolder*@ />
+                        </td>
+                        <td>
+                            <img lass="img-fluid mb-2" style="width: 80px; height: 80px" alt="profile picture"
+                                src="/imagenes/placeH.png" @*PlaceHolder*@ />
+                        </td>
+                        <td>
+                            <img class="img-fluid mb-2" style="width: 80px; height: 80px" alt="profile picture"
+                                src="/imagenes/placeH.png" @*PlaceHolder*@ />
+                        </td>
+                    </tr>
+                </tbody>
+        </div>
+        <div class="row">
+            @*PlaceHolder*@
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-active">
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="col-3">
+        @*Contenedor para mostrar propaganda*@
+        <div class="row">
+            <img class="img-thumbnail" src="/imagenes/placeH.png" @*PlaceHolder*@ />
+        </div>
+
+        <form class="form-horizontal" asp-controller="Ventas" asp-action="CalculoTotal" method="post">
+            @*Botones para opciones de pago*@
+            <div class="row">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-primary">500</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary">200</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary">100</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary">50</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-primary">20</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary">10</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary">5</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary">Tarjeta</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+<div class="row">
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-primary">Back</button>
+                </td>
+                <td>
+                    <input type="number" name="Codigo" id="codBarras" value="" /> @*Intoduce para mostrar codigo*@
+                </td>
+                <td>
+                    <input class="form-control" type="number" name="cantidad" id="cantidad" value="" min="0" />
+                    @*Introduce cantidades a pagar*@
+                </td>
+                <td>
+                    <label> Total </label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+        
+</div>
