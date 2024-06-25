@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Alta de Cliente";
+}
+<h1>Agregar Cliente</h1>
+<form asp-controller="Clientes" asp-action="ClienteAdd" method="post">
+    <div class="mb-3">
+        <label for="nombreClientes" class="form-label">Nombre del Cliente</label>
+        <input type="text" class="form-control" id="nombreClientes" name="nombreClientes" placeholder="Escriba el nombre del Cliente" />
+    </div>
+    <div class="mb-3">
+        <label for="fechaRegistrio" class="form-label">Fecha de registro</label>
+        <input type="text" class="form-control" id="fechaRegistrio" name="fechaRegistrio" placeholder="Escriba la Fecha en que se registro al cliente" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a class="btn btn-secondary" asp-controller="Clientes" asp-action="ClienteList">Cancelar</a>
+</form>
