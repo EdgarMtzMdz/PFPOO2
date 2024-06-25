@@ -7,9 +7,7 @@ namespace ProyectoFinal;
 
 public class UserController : Controller
 {
-    public UserController()
-    {
-    }
+    
 
     private readonly UserManager<IdentityUser>_userManager;
     private readonly SignInManager<IdentityUser>_signInManager;
@@ -39,7 +37,7 @@ public class UserController : Controller
 
             var user = new IdentityUser() 
             {
-                Email = model.Matricula.ToString(),
+                PhoneNumber = model.Matricula.ToString(),
                 UserName = model.Matricula.ToString()
             };
 
@@ -81,7 +79,7 @@ public class UserController : Controller
                 return View(model);
             }
 
-            var result = await signInManager.PasswordSignInAsync(model.Matricula, model.Password
+            var result = await _signInManager.PasswordSignInAsync(model.Matricula.ToString(), model.Password
             , model.Remember, lockoutOnFailure: false);
 
             if (result.Succeeded)

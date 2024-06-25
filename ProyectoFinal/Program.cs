@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDBContext>(opc =>
-opc.UseSqlServer("name=PostgresConnection"));
+opc.UseSqlServer("name=MyConnectionTrust"));
 
 builder.Services.AddAuthentication();
 
