@@ -140,3 +140,4 @@ C:\Users\1136962295\OneDrive\Documentos\ProyectosPOO2\ProyectoFinal\ProyectoFina
 C:\Users\1136962295\OneDrive\Documentos\ProyectosPOO2\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0\ProyectoFinal.pdb
 C:\Users\1136962295\OneDrive\Documentos\ProyectosPOO2\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0\ProyectoFinal.genruntimeconfig.cache
 C:\Users\1136962295\OneDrive\Documentos\ProyectosPOO2\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0\ref\ProyectoFinal.dll
+C:\Users\1136962295\OneDrive\Documentos\ProyectosPOO2\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0\ProyectoFinal.sourcelink.json
