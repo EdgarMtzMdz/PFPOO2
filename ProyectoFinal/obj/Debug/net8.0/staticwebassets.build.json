@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+6oehDd8625XRiqHdYAVDQw1+KiUh+Hx1SsSb5yeP+E=",
+  "Hash": "4D22h6DIEaYVTrDQCvE8bwWwrGiA9b+PTqtauO3xe5A=",
   "Source": "ProyectoFinal",
   "BasePath": "_content/ProyectoFinal",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\1136962295\\OneDrive\\Documentos\\ProyectosPOO2\\ProyectoFinal\\ProyectoFinal\\wwwroot\\imagenes\\placeH.png",
+      "SourceId": "ProyectoFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1136962295\\OneDrive\\Documentos\\ProyectosPOO2\\ProyectoFinal\\ProyectoFinal\\wwwroot\\",
+      "BasePath": "_content/ProyectoFinal",
+      "RelativePath": "imagenes/placeH.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\placeH.png"
     },
     {
       "Identity": "C:\\Users\\1136962295\\OneDrive\\Documentos\\ProyectosPOO2\\ProyectoFinal\\ProyectoFinal\\wwwroot\\js\\site.js",

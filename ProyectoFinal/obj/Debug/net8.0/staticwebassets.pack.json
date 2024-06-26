@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\1136962295\\OneDrive\\Documentos\\ProyectosPOO2\\ProyectoFinal\\ProyectoFinal\\wwwroot\\imagenes\\placeH.png",
+      "PackagePath": "staticwebassets\\imagenes\\placeH.png"
+    },
+    {
       "Id": "C:\\Users\\1136962295\\OneDrive\\Documentos\\ProyectosPOO2\\ProyectoFinal\\ProyectoFinal\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

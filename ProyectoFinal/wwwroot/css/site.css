@@ -20,3 +20,16 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.label-gris {
+  background-color: #d3d3d3; /* Color gris claro */
+  padding: 5px;             /* Espaciado interno */
+  border-radius: 3px;       /* Bordes redondeados (opcional) */
+}
+
+.label-grisD {
+  background-color: #d3d3d3; /* Color gris claro */
+  padding: 5px;             /* Espaciado interno */
+  border-radius: 3px;       /* Bordes redondeados (opcional) */
+  text-align: right;
+}
