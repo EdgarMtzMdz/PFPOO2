@@ -1,0 +1,40 @@
+@model List<ProveedoresModel>
+
+@{
+    ViewData["Title"] = "Lista de la proveedores";
+    int numero = 0;
+}
+
+<h1>@ViewData["Title"]</h1>
+<a class="btn btn-outline-primary" asp-action="ProveedorAdd" asp-asp-controller="Proveedor">Agregar Proveedor</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+        {
+            numero++;
+        }
+            <tr>
+                <th scope="row">@numero
+                </th>
+                <td>@p.nombreProveedores</td>
+                <td>@p.codProveedores</td>
+                <td>
+                    <a class="btn btn-outline-info" asp-action="ProveedorEdit" asp-controller="Proveedor" asp-route-id="@p.idProveedores">Editar</a>
+                    
+                    <a class="btn btn-outline-danger" asp-action="ProveedorDeleted" asp-controller="Proveedor" asp-route-id="@p.idProveedores">Borrar</a>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>

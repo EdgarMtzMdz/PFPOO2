@@ -1,0 +1,20 @@
+@model ProveedoresModel
+
+@{
+    ViewData["Title"] = "Editar el proveedor";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="ProveedorEdit" asp-controller="Proveedor">
+    <input type="hidden" asp-for"Id">
+
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" asp-for="nombreProveedores" placeholder="Nombre del Proveedor">
+        <label asp-for="nombreProveedores">Nombre del Proveedor</label>
+    </div>
+
+
+    <button class="btn btn-outline-primary">Guardar</button>
+    <a class="btn btn-outline-secundary" asp-action="ProveedorList" asp-controller="Proveedor">Regresar</a>
+</form>
