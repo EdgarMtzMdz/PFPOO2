@@ -1,21 +1,20 @@
 @model IEnumerable<InventarioModel>
-@{
-    ViewData["Title"] = "Listado de Productos";
-}
 
+<!DOCTYPE html>
+<html>
 <head>
     <title>Lista de Productos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: url('/imagenes/placeH.png') no-repeat center center fixed;
+            background: url('/imagenes/fondo.jpg') no-repeat center center fixed;
             background-size: cover;
         }
         .container {
             width: 80%;
             margin: 0 auto;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 230, 191, 0.588);
             border-radius: 10px;
         }
         table {
@@ -35,50 +34,79 @@
             display: flex;
             justify-content: flex-end;
         }
-        .buttons button {
+        .buttons button, .buttons a {
             margin-left: 10px;
             padding: 10px 20px;
             border: none;
             background-color: #8B4513;
             color: white;
             cursor: pointer;
+            text-decoration: none;
         }
-        .buttons button:hover {
+        .buttons button:hover, .buttons a:hover {
             background-color: #A0522D;
+        }
+        .search-form {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .search-form label, .search-form input, .search-form button {
+            margin-right: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+      <div class="container">
+        <div class="search-form">
+            <form asp-action="BuscarProducto" method="post">
+                <label for="codBarras">Código de Barras:</label>
+                <input type="text" id="codBarras" name="codBarras" required />
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div class="alert alert-danger">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+
         <table>
             <thead>
                 <tr>
                     <th>Acciones</th>
                     <th>Código de Barras</th>
+                    <th>Código Proveedor</th>
                     <th>Nombre</th>
+                    <th>Costo</th>
                     <th>Cantidad</th>
-                    <th>Precio</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (var Inventario in Model)
+                @foreach (var pro in Model)
                 {
                     <tr>
                         <td>
-                        <a class="btn btn-primary" asp-controller="Inventario" asp-action="InventarioEdit" asp-route-Id="@Inventario.codBarras">Editar</a>
-                        <a class="btn btn-danger" asp-controller="Inventario" asp-action="InventarioDeleted" asp-route-Id="@Inventario.codBarras">Borrar</a>
+                            <form asp-action="ActualizarCantidad" method="post">
+                                <input type="hidden" name="codBarras" value="@pro.codBarras" />
+                                <input type="number" name="nuevaCantidad" value="@pro.cantProducto" min="0" required />
+                                <button type="submit">Actualizar</button>
+                            </form>
                         </td>
-                        <td>@Inventario.codBarras</td>
-                        <td>@Inventario.nombreProducto</td>
-                        <td>@Inventario.cantProducto</td>
-                        <td>@Inventario.costoProducto</td>
+                        <td>@pro.codBarras</td>
+                        <td>@pro.codProveedores</td>
+                        <td>@pro.nombreProducto</td>
+                        <td>@pro.costoProducto</td>
+                        <td>@pro.cantProducto</td>
                     </tr>
                 }
             </tbody>
         </table>
         <div class="buttons">
-            <a asp-action="InventarioAdd" asp-controller="Inventario" class="btn btn-primary mb-3"> Agregar Producto</a>
+            <a asp-action="InventarioAdd" asp-controller="Inventario">Agregar Producto</a>
         </div>
     </div>
 </body>
 </html>
+
