@@ -1,0 +1,27 @@
+@model ClientesModel
+@{
+    ViewData["Title"] = "Alta de Cliente";
+}
+<h1>Agregar Cliente</h1>
+<form asp-controller="Clientes" asp-action="ClientesAdd" method="post">
+    <input type="hidden" asp-for="idClientes" name="idClientes">
+
+    <div class="mb-3">
+        <label asp-for="nombreClientes" class="form-label">Nombre del Cliente</label>
+        <input type="text" class="form-control" asp-for="nombreClientes" name="nombreClientes" placeholder="Escriba el nombre del Cliente" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="fechaRegistrio" class="form-label">Fecha de registro</label>
+        <input type="text" class="form-control" asp-for="fechaRegistrio" name="fechaRegistrio" placeholder="Escriba la Fecha en que se registro al cliente" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="telNumClientes" class="form-label">Telefono </label>
+        <input type="text" class="form-control" asp-for="telNumClientes" name="telNumClientes" placeholder="Numero de telefono"/>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Puntos" class="form-label">Puntos</label>
+        <input type="text" class="form-control" asp-for="Puntos" name="Puntos" placeholder="Puntos del cliente" readonly/>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a class="btn btn-secondary" asp-controller="Clientes" asp-action="ClientesList">Cancelar</a>
+</form>

@@ -1,0 +1,75 @@
+@model List<Inventario>
+
+@{
+    ViewData["Title"] = "Productos del Proveedor";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <input type="text" id="codProveedorInput" placeholder="Ingrese Código del Proveedor" />
+    <button id="buscarProductosBtn">Buscar Productos</button>
+</div>
+
+<div id="productosContainer">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Código de Barras</th>
+                <th scope="col">Nombre del Producto</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Costo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var producto in Model)
+            {
+                <tr>
+                    <td>@producto.codBarras</td>
+                    <td>@producto.nombreProducto</td>
+                    <td>@producto.cantProducto</td>
+                    <td>@producto.costoProducto</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#buscarProductosBtn').click(function () {
+                var codProveedor = $('#codProveedorInput').val();
+                $.ajax({
+                    url: '@Url.Action("ObtenerProductosPorProveedor", "Inventario")',
+                    type: 'GET',
+                    data: { codProveedor: codProveedor },
+                    success: function (data) {
+                        var productosHtml = '';
+                        if (data.length > 0) {
+                            productosHtml += '<table class="table table-striped">';
+                            productosHtml += '<thead><tr><th scope="col">Código de Barras</th><th scope="col">Nombre del Producto</th><th scope="col">Cantidad</th><th scope="col">Costo</th></tr></thead>';
+                            productosHtml += '<tbody>';
+                            $.each(data, function (index, producto) {
+                                productosHtml += '<tr>';
+                                productosHtml += '<td>' + producto.codBarras + '</td>';
+                                productosHtml += '<td>' + producto.nombreProducto + '</td>';
+                                productosHtml += '<td>' + producto.cantProducto + '</td>';
+                                productosHtml += '<td>' + producto.costoProducto + '</td>';
+                                productosHtml += '</tr>';
+                            });
+                            productosHtml += '</tbody></table>';
+                        } else {
+                            productosHtml = '<p>No se encontraron productos para este proveedor.</p>';
+                        }
+                        $('#productosContainer').html(productosHtml);
+                    },
+                    error: function () {
+                        alert('Ocurrió un error al obtener los productos.');
+                    }
+                });
+            });
+        });
+    </script>
+}

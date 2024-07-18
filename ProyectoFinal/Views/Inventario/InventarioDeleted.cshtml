@@ -1,0 +1,25 @@
+@model InventarioModel
+
+
+@{
+    ViewData["Title"] = "Borrar Producto";
+}
+
+
+<h3 class="mb-3"></h3>
+
+
+<form asp-controller="Inventario" asp-action="InventarioDeleted">
+    <div class="card" style="width 18rem;">
+        <div class="card-body">
+        <h5 class="card-title">Info del Producto</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Estas Seguro que deseas borrar el producto</h6>
+        <p class="card-text">Categoria: @Model.nombreProducto</p>
+        </div>
+    </div>
+
+
+    <input type="hidden" asp-for="codBarras"/>
+    <button type="submit" class="btn btn-danger">Borrar</button>
+    <a class="btn btn-secondary" asp-action="InventarioList" asp-controller="Inventario">Cancelar</a>
+</form>

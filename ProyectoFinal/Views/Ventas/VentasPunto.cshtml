@@ -1,10 +1,11 @@
-@model InventarioModel;
+@using Microsoft.IdentityModel.Tokens
+@model IEnumerable<InventarioModel> 
 
 @{
     ViewData["Title"] = "VentasPunto";
 }
 
-
+<html lang="es">
 <div class="container">
     <div class="row">
         @*Contenedores para mostrar Nombre o codigo del empleado*@
@@ -51,25 +52,30 @@
                 </tbody>
         </div>
         <div class="row">
+            @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div class="alert alert-danger">
+                @ViewBag.ErrorMessage
+            </div>
+        }
             @*PlaceHolder*@
-            <table class="table">
-                <thead>
+            <table border="1">
+        <thead>
+            <tr>
+                <th>Contenido</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+           @foreach (var product in Model)
+                {
                     <tr>
-                        <th scope="col">Codigo</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Precio</th>
+                        <td>@product.nombreProducto</td>
+                        <td>@product.costoProducto</td>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr class="table-active">
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>50</td>
-                    </tr>
-                </tbody>
-            </table>
+                }
+        </tbody>
+    </table>
         </div>
     </div>
 
@@ -79,14 +85,14 @@
             <img class="img-thumbnail" src="/imagenes/placeH.png" @*PlaceHolder*@ />
         </div>
 
-        <form class="form-horizontal" asp-controller="Ventas" asp-action="CalculoTotal" method="post">
+         
             @*Botones para opciones de pago*@
             <div class="row">
-                <table class="table">
+                <table class="table" id="miTabla">
                     <tbody>
                         <tr>
                             <td>
-                                <button type="button" class="btn btn-primary">500</button>
+                                <button id="cant500" class="btn btn-primary">500</button>
                             </td>
                             <td>
                                 <button type="button" class="btn btn-primary">200</button>
@@ -115,7 +121,7 @@
                     </tbody>
                 </table>
             </div>
-        </form>
+        
 
     </div>
 </div>
@@ -130,20 +136,33 @@
                     <button type="button" class="btn btn-primary">Back</button>
                 </td>
                 <td>
-                    <input type="number" name="Codigo" id="codBarras" value="" /> @*Intoduce para mostrar codigo*@
+                    <form asp-action="BuscarVenta" method="post">
+                <label for="codBarras">Código de Barras:</label>
+                <input type="text" id="codBarras" name="codBarras" required />
+                <button type="submit">Enter</button>
+                </form>
                 </td>
                 <td>
-                    <input class="form-control" type="number" name="cantidad" id="cantidad" value="" min="0" />
+                    <input  type="text"  id="cantidad"  />
                     @*Introduce cantidades a pagar*@
                 </td>
                 <td>
-                    <label> Total </label>
+                    
+                    @foreach (var product in Model)
+                {
+                    
+                        <label> Total </label> 
+                        <td>@product.costoProducto</td>
+                    
+                }
                 </td>
             </tr>
         </tbody>
-    </table>
-
-
-
-        
+    </table>  
 </div>
+</html>
+
+ <script src="site.js"></script>
+
+    
+</script>

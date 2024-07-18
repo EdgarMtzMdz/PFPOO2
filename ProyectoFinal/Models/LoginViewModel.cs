@@ -4,8 +4,17 @@ namespace ProyectoFinal;
 
 public class LoginViewModel
 {
-    [Required(ErrorMessage = "El campo{0} es requerido")]
-    public int Matricula { get; set; }
+    public LoginViewModel()
+    {
+        
+
+    }
+
+    
+
+    [Required(ErrorMessage = "El campo {0} es requerido")]
+    [EmailAddress(ErrorMessage = "El campo debe ser valido")]
+    public string Email { get; set; }
 
     [Required(ErrorMessage = "El campo{0} es requerido")]
     [DataType(DataType.Password)]

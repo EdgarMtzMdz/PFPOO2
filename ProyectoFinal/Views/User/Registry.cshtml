@@ -1,36 +1,35 @@
-@model RegistryViewModel
+@model RegistryViewModel;
 @{
     ViewData["Title"] = "Registro";
 }
 
-<h1>Registrate</h1>
 
-<div class="card">
-    <div class="card-body">
-        <form asp-action="Registry" asp-controller="User">
-
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-            <div class="mb-3">
-                <label asp-for="Matricula" class="form-label"></label>
-                <input asp-for="Matricula" class="form-control" />
-                <span asp-validation-for="Matricula" class="text-danger" ></span>
-            </div>
-
-            <div class="mb-3">
-                <label asp-for="Password" class="form-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger" ></span>
-            </div>
+<head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
 
 
-            <button class="btn btn-primary">Registrate</button>
-            <a class="btn btn-success" asp-action="Login" asp-controller="User">Entrar al Sistema</a>
+<div id="fullscreen_bg" class="fullscreen_bg"/>
 
-        </form>
-    <div>
+<div class="container">
+
+	<form class="form-signin" asp-action="Registry">
+		<h1 class="form-signin-heading text-muted">Registro</h1>
+		<input asp-for="Email" type="text" class="form-control" placeholder="Email" required="" autofocus="">
+        <span asp-validation-for="Email" class="text-danger"></span>
+
+		<input asp-for="Password" type="password" class="form-control" placeholder="Contraseña" required="">
+        <span asp-validation-for="Password" class="text-danger"></span>
+        
+		<button class="btn btn-lg btn-primary btn-block" >
+			Entrar
+		</button>
+        <a class="btn btn-lg btn-primary btn-block" type="submit" asp-action="Login" asp-controller="User">
+			Atras
+		</a>
+	</form>
+
 </div>
-
-@section Scripts {
-    <partial name="_ValidationScriptsPartial"/>
-}

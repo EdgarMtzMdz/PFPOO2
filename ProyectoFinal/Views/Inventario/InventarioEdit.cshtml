@@ -1,0 +1,48 @@
+@model InventarioModel
+
+@{
+    ViewData["Title"] = "Editar el Producto";
+}
+
+<h1>Editar el Producto</h1>
+
+<form asp-action="InventarioEdit" asp-controller="Inventario">
+    
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" asp-for="codBarras" placeholder="Codigo de barras" readonly></input>
+        <label asp-for="codBarras">Codigo de barras</label>
+        @* <span asp-validation-for="codBarras" class="text-danger" ></span> *@
+
+    </div>
+    
+
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" asp-for="nombreProducto" placeholder="Nombre del producto"></input>
+        <label asp-for="nombreProducto">Nombre del Producto</label>
+        @* <span asp-validation-for="nombreProducto" class="text-danger" ></span> *@
+
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" asp-for="cantProducto" placeholder="Cantidad del Producto" ></input>
+        <label asp-for="cantProducto">Cantidad del Producto</label> 
+        @* <span asp-validation-for="cantProducto" class="text-danger" ></span> *@
+
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" asp-for="costoProducto" placeholder="Costo del Producto"></input>
+        <label asp-for="costoProducto">Costo del Producto</label>
+        @* <span asp-validation-for="costoProducto" class="text-danger" ></span> *@
+
+    </div>
+
+    <div class="mb-3">
+        <label for="codProveedores" class="form-label">Proveedor</label>
+                <select class="form-select" asp-for="codProveedor" asp-items="@Model.ProveedorList">
+                    <option value="">Seleccionar Proveedor</option>
+                </select>
+    </div>
+    
+    <button class="btn btn-outline-primary">Guardar</button>
+    <a class="btn btn-outline-secundary" asp-action="InventarioList" asp-controller="Inventario">Regresar</a>
+</form>

@@ -3,39 +3,39 @@
     ViewData["Title"] = "Login";
 }
 
-<h1>Login</h1>
-
-<div class="card">
-    <div class="card-body">
-        <form asp-action="Login" asp-controller="User">
-
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-            <div class="mb-3">
-                <label asp-for="Matricula" class="form-label"></label>
-                <input asp-for="Matricula" autocomplete="off" class="form-control" />
-                <span asp-validation-for="Matricula" class="text-danger" ></span>
-            </div>
-
-            <div class="mb-3">
-                <label asp-for="Password" class="form-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger" ></span>
-            </div>
-
-            <div class="mb-3">
-                <input class="form-check-input" type="checkbox" asp-for="Remember"  />
-                <label asp-for="Remember" class="form-check-label"></label>
-            </div>
-
-
-            <button class="btn btn-primary">LogIn</button>
-            <a class="btn btn-success" asp-action="Registry" asp-controller="User">Crear una nueva cuenta</a>
-
-        </form>
-    <div>
-</div>
-
 @section Scripts {
     <partial name="_ValidationScriptsPartial"/>
 }
+<head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+
+
+<div id="fullscreen_bg" class="fullscreen_bg"/>
+
+<div class="container">
+
+	<form class="form-signin" asp-action="Login" asp-controller="User">
+
+		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+		<h1 class="form-signin-heading text-muted">Nombre de la tienda</h1>
+		<input type="text" asp-for="Email" class="form-control" placeholder="Email" required="" autofocus="">
+        <span asp-validation-for="Email" class="text-danger"></span>
+
+		<input type="password" asp-for="Password" class="form-control" placeholder="Contraseña" required="">
+        <span asp-validation-for="Password" class="text-danger"></span>
+        
+		<button class="btn btn-lg btn-primary btn-block">
+			Entrar
+		</button>
+        <a class="btn btn-lg btn-primary btn-block" type="submit" asp-action="Registry">
+			Registrarse
+		</a>
+		
+	</form>
+
+</div>

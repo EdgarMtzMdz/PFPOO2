@@ -9,79 +9,135 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProyectoFinal
 build_property.RootNamespace = ProyectoFinal
-build_property.ProjectDir = C:\Users\1136962295\OneDrive\Documentos\ProyectosPOO2\ProyectoFinal\ProyectoFinal\
+build_property.ProjectDir = C:\Users\1136962295\Downloads\ProyectosPOO2\ProyectoFinal\ProyectoFinal\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\1136962295\OneDrive\Documentos\ProyectosPOO2\ProyectoFinal\ProyectoFinal
+build_property.MSBuildProjectDirectory = C:\Users\1136962295\Downloads\ProyectosPOO2\ProyectoFinal\ProyectoFinal
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Clientes/ClienteAdd.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ2xpZW50ZUFkZC5jc2h0bWw=
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Clientes/ClientesAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ2xpZW50ZXNBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Clientes/ClienteDeleted.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ2xpZW50ZURlbGV0ZWQuY3NodG1s
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Clientes/ClientesDeleted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ2xpZW50ZXNEZWxldGVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Clientes/ClienteEdit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ2xpZW50ZUVkaXQuY3NodG1s
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Clientes/ClientesEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ2xpZW50ZXNFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Clientes/ClienteList.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ2xpZW50ZUxpc3QuY3NodG1s
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Clientes/ClientesList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ2xpZW50ZXNMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Home/Index.cshtml]
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Empleados/EmpleadosAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEVtcGxlYWRvc0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Empleados/EmpleadosDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEVtcGxlYWRvc0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Empleados/EmpleadosEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEVtcGxlYWRvc0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Empleados/EmpleadosList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEVtcGxlYWRvc0xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Home/Privacy.cshtml]
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Inventario/InventarioList.cshtml]
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Inventario/InventarioAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xJbnZlbnRhcmlvQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Inventario/InventarioDeleted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xJbnZlbnRhcmlvRGVsZXRlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Inventario/InventarioEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xJbnZlbnRhcmlvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Inventario/InventarioList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xJbnZlbnRhcmlvTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Shared/Error.cshtml]
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Inventario/ObtenerProductosPorProveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xPYnRlbmVyUHJvZHVjdG9zUG9yUHJvdmVlZG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Proveedor/ProductPerPorveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXFByb2R1Y3RQZXJQb3J2ZWVkb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Proveedor/ProveedorAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXFByb3ZlZWRvckFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Proveedor/ProveedorDeleted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXFByb3ZlZWRvckRlbGV0ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Proveedor/ProveedorEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXFByb3ZlZWRvckVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Proveedor/ProveedorList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXFByb3ZlZWRvckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Shared/_LinksLogin.cshtml]
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Shared/_LinksLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MaW5rc0xvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/User/Login.cshtml]
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Shared/_VentasList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WZW50YXNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/User/Registry.cshtml]
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/User/Registry.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3RyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/User/_layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfbGF5b3V0LmNzaHRtbA==
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/User/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Ventas/VentasPunto.cshtml]
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Ventas/VentasPunto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXFZlbnRhc1B1bnRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/_ViewImports.cshtml]
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/_ViewStart.cshtml]
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/1136962295/OneDrive/Documentos/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Shared/_Layout.cshtml]
+[C:/Users/1136962295/Downloads/ProyectosPOO2/ProyectoFinal/ProyectoFinal/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ww5h623m21

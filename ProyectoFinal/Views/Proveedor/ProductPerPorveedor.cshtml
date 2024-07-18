@@ -1,0 +1,39 @@
+@model IEnumerable<InventarioModel>
+
+@{
+    ViewData["Title"] = "Lista de la proveedores";
+    int numero = 0;
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+<table class="table table-striped">
+    <thead>
+        
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+        {
+            numero++;
+        }
+            <tr>
+                <th scope="row">@numero
+                </th>
+                <td>@p.codBarras</td>
+                <td>@p.nombreProducto</td>
+                <td>@p.cantProducto</td>
+                <td>@p.costoProducto</td>
+                
+            </tr>
+
+        }
+    </tbody>
+</table>

@@ -13,6 +13,8 @@ public class ClientesModel
 
         public string nombreClientes { get; set; }
 
+        public string telNumClientes { get; set; }
+
         public DateTime fechaRegistrio { get; set; }
 
         public int Puntos { get; set; }

@@ -10,18 +10,18 @@ public class InventarioModel
     }
 
 
-    public int codBarras { get; set; }
+    public string codBarras { get; set; }
     public string nombreProducto { get; set; }
     public int cantProducto { get; set; }
     
     public float costoProducto { get; set; }
 
-    public Guid idProveedores { get; set; }
+    public int? nuevaCantidad { get; set; }
 
-    public ProveedoresModel ProveedoresModel { get; set; }
-    public string? nombreProveedores { get; set; }
-
-    public List<SelectListItem> ProoveedoresList { get; set; }
+    public ProveedorModel ProveedorModel { get; set; }
+    // public string? nombreProveedor { get; set; }
+    public string? codProveedor {get; set; }
+    public List<SelectListItem> ProveedorList { get; set; }
 
 
     

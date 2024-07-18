@@ -5,8 +5,8 @@ namespace ProyectoFinal;
 public class RegistryViewModel
     {
         [Required(ErrorMessage = "El campo {0} es requerido")]
-        [DataType(DataType.PhoneNumber)]
-        public int Matricula { get; set; }
+        [EmailAddress(ErrorMessage = "El campo debe ser valido")]
+        public string Email { get; set; }
 
         [Required(ErrorMessage = "El campo {0} es requerido")]
         [DataType(DataType.Password)]

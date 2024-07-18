@@ -6,6 +6,10 @@ public class Empleados
         {
             public Empleados()
             {
+                nombreEmpleados = string.Empty;
+                Puesto = string.Empty;
+                Email = string.Empty;
+                Telefono = string.Empty;
             }
 [Key]
             public Guid idEmpleados { get; set; }
@@ -19,4 +23,7 @@ public class Empleados
             public string Email { get; set; }
 
             public string Telefono { get; set; }
+
+            
+            public int Matricula { get; set; }
         }

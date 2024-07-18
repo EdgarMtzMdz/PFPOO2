@@ -1,0 +1,15 @@
+@model IEnumerable<VentasListModel> 
+
+@{
+    ViewData["Title"] = "Lista de Ventas";
+  
+}
+
+@foreach (var product in Model)
+{
+    
+    <tr>
+        <td>@product.nombreProducto</td>
+        <td>@product.costoProducto</td>
+    </tr>
+}

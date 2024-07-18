@@ -1,0 +1,101 @@
+@model InventarioModel
+
+@{
+    ViewData["Title"] = "Alta de Producto";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('/imagenes/fondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 230, 191, 0.588);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .form-label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .text-danger {
+            color: red;
+            font-size: 0.9em;
+        }
+        .buttons {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .buttons button, .buttons a {
+            margin-left: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #8B4513;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .buttons button:hover, .buttons a:hover {
+            background-color: #A0522D;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+        <form asp-controller="Inventario" asp-action="InventarioAdd" method="post">
+            <div class="mb-3">
+                <label for="codBarras" class="form-label">Código de Barras</label>
+                <input type="text" class="form-control" id="codBarras" name="codBarras" placeholder="Escriba el código de barras del producto" />
+
+                <label for="nombreProducto" class="form-label">Nombre del Producto</label>
+                <input type="text" class="form-control" id="nombreProducto" name="nombreProducto" placeholder="Escriba el nombre del Producto" />
+                @* <span asp-validation-for="nombreProducto" class="text-danger"></span> *@
+
+                <label for="cantProducto" class="form-label">Cantidad</label>
+                <input type="text" class="form-control" id="cantProducto" name="cantProducto" placeholder="Escriba la cantidad del producto" />
+                @* <span asp-validation-for="cantProducto" class="text-danger"></span> *@
+
+                <label for="costoProducto" class="form-label">Costo</label>
+                <input type="text" class="form-control" id="costoProducto" name="costoProducto" placeholder="Escriba el coste del producto" />
+                @* <span asp-validation-for="costoProducto" class="text-danger"></span> *@
+
+                <label for="codProveedores" class="form-label">Proveedor</label>
+                <select class="form-select" asp-for="codProveedor" asp-items="@Model.ProveedorList">
+                    <option value="">Seleccionar Proveedor</option>
+                </select>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <a class="btn btn-secondary" asp-controller="Inventario" asp-action="InventarioList">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

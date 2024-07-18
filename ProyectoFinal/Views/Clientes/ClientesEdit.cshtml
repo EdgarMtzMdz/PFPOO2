@@ -1,0 +1,39 @@
+@model ClientesModel
+
+
+@{
+    ViewData["Title"] = "Editar Cliente";
+}
+
+
+<h1>@ViewData["Title"]</h1>
+
+
+<form asp-action="ClientesEdit" asp-controller="Clientes">
+    <input type="hidden" asp-for="idClientes">
+   
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" asp-for="nombreClientes" placeholder="Nombre del Cliente">
+        <label asp-for="nombreClientes">Nombre del Cliente</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" asp-for="telNumClientes" placeholder="Telefono">
+        <label asp-for="telNumClientes">Telefono</label>
+    </div>
+
+
+     <div class="form-floating mb-3">
+        <input type="textarea" class="form-control" asp-for="fechaRegistrio" rows="5" readonly>
+        <label asp-for="fechaRegistrio">Fecha de registro</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="textarea" class="form-control" asp-for="Puntos" rows="5" readonly>
+        <label asp-for="Puntos">Puntos</label>
+    </div>
+
+
+    <button class="btn btn-outline-primary">Guardar</button>
+    <a class="btn btn-outline-secondary" asp-action="ClientesList" asp-controller="Clientes">Cancelar</a>
+</form>

@@ -1,12 +1,19 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using ProyectoFinal;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var politicaUsuariosAutentificados = new AuthorizationPolicyBuilder()
+    .RequireAuthenticatedUser()
+    .Build();
+
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(opc => 
+    opc.Filters.Add(new AuthorizeFilter(politicaUsuariosAutentificados)));
 
 builder.Services.AddDbContext<ApplicationDBContext>(opc =>
 opc.UseSqlServer("name=MyConnectionTrust"));
@@ -21,8 +28,8 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(opc =>
 
 builder.Services.PostConfigure<CookieAuthenticationOptions>(
     IdentityConstants.ApplicationScheme, opc => {
-        opc.LoginPath = "/Empleados/Login";
-        opc.AccessDeniedPath = "/Empleados/Login";
+        opc.LoginPath = "/User/Login";
+        opc.AccessDeniedPath = "/User/Login";
     }
 );
 

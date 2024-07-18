@@ -4285,11 +4285,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1136962295\\OneDrive\\Documentos\\ProyectosPOO2\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+      "projectUniqueName": "C:\\Users\\1136962295\\Downloads\\ProyectosPOO2\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj",
       "projectName": "ProyectoFinal",
-      "projectPath": "C:\\Users\\1136962295\\OneDrive\\Documentos\\ProyectosPOO2\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+      "projectPath": "C:\\Users\\1136962295\\Downloads\\ProyectosPOO2\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj",
       "packagesPath": "C:\\Users\\1136962295\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1136962295\\OneDrive\\Documentos\\ProyectosPOO2\\ProyectoFinal\\ProyectoFinal\\obj\\",
+      "outputPath": "C:\\Users\\1136962295\\Downloads\\ProyectosPOO2\\ProyectoFinal\\ProyectoFinal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\1136962295\\AppData\\Roaming\\NuGet\\NuGet.Config",

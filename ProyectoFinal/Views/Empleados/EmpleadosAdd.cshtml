@@ -1,0 +1,31 @@
+@model EmpleadosModel
+@{
+    ViewData["Title"] = "Alta de Empleado";
+}
+<h1>Agregar Empleado</h1>
+<form asp-controller="Empleados" asp-action="EmpleadosAdd" method="post">
+    <input type="hidden" asp-for="idEmpleados" name="idEmpleados">
+
+    <div class="mb-3">
+        <label asp-for="nombreEmpleados" class="form-label">Nombre del Empleado</label>
+        <input type="text" class="form-control" asp-for="nombreEmpleados" name="nombreEmpleados" placeholder="Escriba el nombre del Empleado" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Puesto" class="form-label">Puesto</label>
+        <input type="text" class="form-control" asp-for="Puesto" name="Puesto" placeholder="Ingrese el puesto" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Salario" class="form-label">Salario </label>
+        <input type="text" class="form-control" asp-for="Salario" name="Salario" placeholder="Salario"/>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Email</label>
+        <input type="text" class="form-control" asp-for="Email" name="Email" placeholder="Email" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Telefono" class="form-label">Telefono</label>
+        <input type="text" class="form-control" asp-for="Telefono" name="Telefono" placeholder="Telefono" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a class="btn btn-secondary" asp-controller="Empleados" asp-action="EmpleadosList">Cancelar</a>
+</form>
