@@ -121,3 +121,11 @@ body {
   background-color: #5c330a; /* Color café más claro al pasar el ratón */
   border-color: #905010; /* Borde café más claro al pasar el ratón */
 }
+
+.navbar-dark.bg-brown, .footer.bg-brown {
+  background-color: #2b1201; /* Color café */
+}
+
+.footer.text-white a {
+  color: #FFFFFF; /* Color blanco para los enlaces en el pie de página */
+}

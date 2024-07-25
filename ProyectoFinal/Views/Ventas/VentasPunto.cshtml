@@ -4,7 +4,10 @@
 @{
     ViewData["Title"] = "VentasPunto";
 }
-
+<link rel="stylesheet" href="~/css/PunVen-style.css" />
+<body>
+    <br>
+    <div class="row">
 <html lang="es">
 <div class="container">
     <div class="row">
@@ -22,7 +25,8 @@
 <div class="row">
     <div class="col-3">
         <div class="row">
-            Logo
+            <img lass="img-fluid mb-2" style="width: 150px; height: 140px" alt="profile picture"
+                src="/imagenes/logo.png" @*PlaceHolder*@ />
         </div>
         <div class="row">
             Opciones
@@ -37,16 +41,16 @@
                 <tbody>
                     <tr>
                         <td>
-                            <img lass="img-fluid mb-2" style="width: 80px; height: 80px" alt="profile picture"
-                                src="/imagenes/placeH.png" @*PlaceHolder*@ />
+                            <img lass="img-fluid mb-2" style="width: 90px; height: 80px" alt="profile picture"
+                                src="/imagenes/americano.jpg" @*PlaceHolder*@ />
                         </td>
                         <td>
-                            <img lass="img-fluid mb-2" style="width: 80px; height: 80px" alt="profile picture"
-                                src="/imagenes/placeH.png" @*PlaceHolder*@ />
+                            <img lass="img-fluid mb-2" style="width: 90px; height: 80px" alt="profile picture"
+                                src="/imagenes/latte.jpg" @*PlaceHolder*@ />
                         </td>
                         <td>
                             <img class="img-fluid mb-2" style="width: 80px; height: 80px" alt="profile picture"
-                                src="/imagenes/placeH.png" @*PlaceHolder*@ />
+                                src="/imagenes/cappucino.jpg" @*PlaceHolder*@ />
                         </td>
                     </tr>
                 </tbody>
@@ -82,12 +86,12 @@
     <div class="col-3">
         @*Contenedor para mostrar propaganda*@
         <div class="row">
-            <img class="img-thumbnail" src="/imagenes/placeH.png" @*PlaceHolder*@ />
+            <img class="img-thumbnail" src="/imagenes/promocion.jpg" @*PlaceHolder*@ />
         </div>
 
          
             @*Botones para opciones de pago*@
-            <div class="row">
+            <div class="buttons">
                 <table class="table" id="miTabla">
                     <tbody>
                         <tr>
@@ -166,3 +170,5 @@
 
     
 </script>
+</div>
+</body>

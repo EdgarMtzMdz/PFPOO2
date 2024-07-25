@@ -1,0 +1,61 @@
+body {
+    background-color: #fffcef; /* Color de fondo claro */
+}
+
+.row.m-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons button, .buttons a {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #8B4513; 
+    color: white; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buttons button:hover, .buttons a:hover {
+    background-color: #3d2501bb; 
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #fad57d;
+}
+
+.table .btn-primary {
+    background-color: #8B4513;
+    border-color: #8B4513; 
+}
+
+.table .btn-primary:hover {
+    background-color: #3d2501bb;
+}
+
+.table .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.table .btn-danger:hover {
+    background-color: #c82333; 
+}

@@ -2,7 +2,16 @@
 @{
     ViewData["Title"] = "Alta de Empleado";
 }
-<h1>Agregar Empleado</h1>
+
+<head>
+    <link rel="stylesheet" href="~/css/Empleados-style.css" />
+</head>
+
+<div class="col text-right">
+    <p class="label-gris" style="font-size:160%;">Agregar Empleado</p>
+</div>
+
+<div class="container" style="width: 70%;">
 <form asp-controller="Empleados" asp-action="EmpleadosAdd" method="post">
     <input type="hidden" asp-for="idEmpleados" name="idEmpleados">
 
@@ -26,6 +35,9 @@
         <label asp-for="Telefono" class="form-label">Telefono</label>
         <input type="text" class="form-control" asp-for="Telefono" name="Telefono" placeholder="Telefono" />
     </div>
+    <div class="buttons">
     <button type="submit" class="btn btn-primary">Guardar</button>
     <a class="btn btn-secondary" asp-controller="Empleados" asp-action="EmpleadosList">Cancelar</a>
+    </div>
 </form>
+</div>

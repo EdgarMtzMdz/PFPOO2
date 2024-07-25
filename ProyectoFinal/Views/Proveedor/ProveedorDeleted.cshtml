@@ -4,7 +4,9 @@
     ViewData["Title"] = "Borrar al Proveedor";
 }
 
-
+<head>
+    <link rel="stylesheet" href="~/css/Proveedores-style.css" />
+</head>
 <h3 class="mb-3"></h3>
 
 <form asp-asp-controller="Proveedor" asp-action="ProveedorDeleted">
@@ -17,8 +19,9 @@
         </div>
     </div>
 
-
+    <div class="buttons">
     <input type="hidden" asp-for="codProveedor" />
     <button type="submit" class="btn btn-danger">Borrar</button>
-    <a class="btn btn-secondary" asp-action="CategoryList" asp-controller="Category">Cancelar</a>
+    <a class="btn btn-secondary" asp-action="ProveedorList" asp-controller="Proveedor">Cancelar</a>
+    </div>
 </form>

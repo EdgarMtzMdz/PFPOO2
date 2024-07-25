@@ -5,10 +5,15 @@
     ViewData["Title"] = "Editar Empleado";
 }
 
+<head>
+    <link rel="stylesheet" href="~/css/Empleados-style.css" />
+</head>
 
-<h1>@ViewData["Title"]</h1>
+<div class="col text-right">
+    <p class="label-gris" style="font-size:160%;">@ViewData["Title"]</p>
+</div>
 
-
+<div class="container" style="width: 70%;">
 <form asp-action="EmpleadosEdit" asp-controller="Empleados">
     <input type="hidden" asp-for="idEmpleados">
    
@@ -38,7 +43,9 @@
         <label asp-for="Telefono">Telefono</label>
     </div>
 
-
+    <div class="buttons">
     <button class="btn btn-outline-primary">Guardar</button>
     <a class="btn btn-outline-secondary" asp-action="EmpleadosList" asp-controller="Empleados">Cancelar</a>
+    </div>
 </form>
+</div>

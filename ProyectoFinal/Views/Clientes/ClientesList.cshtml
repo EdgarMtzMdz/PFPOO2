@@ -4,17 +4,25 @@
 @{
     ViewData["Title"] = "Listado de Clientes";
 }
+
+<head>
+    <link rel="stylesheet" href="~/css/Clientes-style.css" />
+</head>
+
 <div class="text-center"></div>
-<h1>Listado de Clientes</h1>
+<div class="col text-right">
+    <p class="label-gris" style="font-size:160%;">Clientes</p>
+</div>
 <h1 class = "display-2"></h1>
+<div class="buttons">
 <a asp-action="ClientesAdd" asp-controller="Clientes" class="btn btn-primary mb-3"> Agregar Cliente</a>
+</div>
 
 
 <table class="table">
     <thead>
         <tr>
             <th>Acciones</th>
-            <th>Id</th>
             <th>Nombre</th>
             <th>Fecha de Registro</th>
             <th>Telefono</th>
@@ -28,9 +36,6 @@
                 <td>
                     <a class="btn btn-primary" asp-controller="Clientes" asp-action="ClientesEdit"  asp-route-Id="@Cli.idClientes" >Editar</a>
                     <a class="btn btn-danger" asp-controller="Clientes" asp-action="ClientesDeleted"  asp-route-Id="@Cli.idClientes">Borrar</a>
-                </td>
-                <td>
-                    @Cli.idClientes
                 </td>
                 <td>
                     @Cli.nombreClientes

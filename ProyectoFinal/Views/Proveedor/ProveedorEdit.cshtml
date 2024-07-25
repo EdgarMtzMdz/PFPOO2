@@ -4,7 +4,13 @@
     ViewData["Title"] = "Editar el proveedor";
 }
 
-<h1>@ViewData["Title"]</h1>
+<head>
+    <link rel="stylesheet" href="~/css/Proveedores-style.css" />
+</head>
+
+<div class="col text-right">
+    <p class="label-gris" style="font-size:160%;">@ViewData["Title"]</p>
+</div>
 
 <form asp-action="ProveedorEdit" asp-controller="Proveedor">
     
@@ -17,7 +23,8 @@
         <label asp-for="nombreProveedor">Nombre del Proveedor</label>
     </div>
 
-
+    <div clas="buttons">
     <button class="btn btn-outline-primary">Guardar</button>
     <a class="btn btn-outline-secundary" asp-action="ProveedorList" asp-controller="Proveedor">Regresar</a>
+    </div>
 </form>

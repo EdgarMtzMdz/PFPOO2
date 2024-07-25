@@ -2,7 +2,16 @@
 @{
     ViewData["Title"] = "Alta de Cliente";
 }
-<h1>Agregar Cliente</h1>
+
+<head>
+    <link rel="stylesheet" href="~/css/Clientes-style.css" />
+</head>
+
+<div class="col text-right">
+    <p class="label-gris" style="font-size:160%;">Agregar Cliente</p>
+</div>
+
+<div class="container" style="width: 70%;">
 <form asp-controller="Clientes" asp-action="ClientesAdd" method="post">
     <input type="hidden" asp-for="idClientes" name="idClientes">
 
@@ -22,6 +31,9 @@
         <label asp-for="Puntos" class="form-label">Puntos</label>
         <input type="text" class="form-control" asp-for="Puntos" name="Puntos" placeholder="Puntos del cliente" readonly/>
     </div>
+    <div class="buttons">
     <button type="submit" class="btn btn-primary">Guardar</button>
     <a class="btn btn-secondary" asp-controller="Clientes" asp-action="ClientesList">Cancelar</a>
+    </div>
 </form>
+</div>

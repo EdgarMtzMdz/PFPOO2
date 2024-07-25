@@ -2,11 +2,15 @@
     ViewData["Title"] = "Home Page";
 }
 
-
-<div class="row">
+<link rel="stylesheet" href="~/css/home-style.css" />
+<body>
+    <br>
+    <br>
+    <div class="row">
+        <div class="row">
     <div class="col d-flex justify-content-center">
         <a asp-controller="Ventas" asp-action="VentasPunto" class="btn custom-btn">
-            <i type="fa-11931" class="cIcon cIcon-fa-11931" title="custicon">
+            <i type="fa-11931" class="cIcon cIcon-fa-11931" title="Punto de Venta">
                 <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" fill="#FFFFFF"
                     viewBox="0 0 1024 1024">
                     <path
@@ -19,8 +23,8 @@
 
     </div>
     <div class="col d-flex justify-content-center">
-        <a asp-controller="Ventas" asp-action="VentasPunto" class="btn custom-btn">
-            <i type="ci-00014" class="cIcon cIcon-ci-00014" title="custicon">
+        <a asp-controller="Empleados" asp-action="EmpleadosList" class="btn custom-btn">
+            <i type="ci-00014" class="cIcon cIcon-ci-00014" title="Empleados">
                 <svg width="10em" height="10em" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 20">
                     <path
                         d="M97.143,16.2a.3.3,0,0,0-.3.293v2.754a.165.165,0,0,1-.168.162H95.035V13.645a.3.3,0,0,0-.609,0v5.769H91.133l.955-1.012a.512.512,0,0,0,.132-.421v-.009l-.91-5.174.245-.355a.7.7,0,0,0,.436.182.535.535,0,0,0,.477-.284h0l.959-1.852,2.186.815a2.039,2.039,0,0,1,1.227,1.845v1.982a.3.3,0,0,0,.609,0V13.149a2.628,2.628,0,0,0-1.606-2.388l-.006,0L92.2,9.4V8.581a2.725,2.725,0,0,0,1.079-1.806,1.345,1.345,0,0,0,.774-.3,1.212,1.212,0,0,0,.135-1.755V3.631a3.773,3.773,0,0,0-7.542,0V4.745a1.152,1.152,0,0,0-.314.784,1.223,1.223,0,0,0,.449.943,1.344,1.344,0,0,0,.773.3,2.7,2.7,0,0,0,1.141,1.849V9.4l-3.634,1.356-.006,0a2.628,2.628,0,0,0-1.606,2.388v6.1a.763.763,0,0,0,.777.748h2.9a.293.293,0,1,0,0-.586h-.655V13.645a.3.3,0,0,0-.608,0v5.769H84.224a.165.165,0,0,1-.168-.162v-6.1A2.039,2.039,0,0,1,85.282,11.3l2.184-.815.959,1.852a.535.535,0,0,0,.477.284.7.7,0,0,0,.436-.182l.245.355-.91,5.175v.009a.512.512,0,0,0,.132.421l.955,1.012H88.542a.293.293,0,1,0,0,.586H96.67a.763.763,0,0,0,.777-.748V16.5A.3.3,0,0,0,97.143,16.2Zm-4.287-5.929L91.961,12l-1.076-.736,1.1-1.313Zm-1.8,1.827-.232.336h-.759l-.232-.336.611-.418ZM89.3,9.5V8.949a3.192,3.192,0,0,0,1.15.21,2.951,2.951,0,0,0,1.138-.228V9.5l-1.143,1.359Zm4.59-3.968a.646.646,0,0,1-.237.5.721.721,0,0,1-.351.156V4.875A.671.671,0,0,1,93.89,5.529Zm-6.364.654a.67.67,0,0,1-.588-.654.705.705,0,0,1,.588-.639Zm.016-1.89a1.554,1.554,0,0,0-.291.063V3.631a3.164,3.164,0,0,1,6.324,0v.7a1.4,1.4,0,0,0-.274-.051c0-.283,0-.228-.958-1.222a.557.557,0,0,0-.691-.081,6.038,6.038,0,0,1-3.546.919A.539.539,0,0,0,87.543,4.293Zm.592,2.121V4.489a6.692,6.692,0,0,0,3.8-.988c.44.455.679.694.756.785V6.413a2.283,2.283,0,0,1-4.559,0Zm.8,5.589-.894-1.726.864-.322,1.105,1.313Zm.349,6.033.881-5.01h.571l.881,5.01-1.166,1.235Z"
@@ -34,7 +38,7 @@
     </div>
     <div class="col d-flex justify-content-center">
         <a asp-controller="Proveedor" asp-action="ProveedorList" class="btn custom-btn">
-            <i type="cb-8316" class="cIcon cIcon-cb-8316" title="custicon">
+            <i type="cb-8316" class="cIcon cIcon-cb-8316" title="Proveedores">
                 <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" fill="#FFFFFF"
                     viewBox="0 0 1024 1024">
                     <path
@@ -44,7 +48,27 @@
             </i></a> @*PlaceHolder*@
     </div>
 </div>
+@*Nombres*@
+    <div class="row">
+        <div class="row">
+    <div class="col d-flex justify-content-center">
+        <h4>Ventas</h4>
+    </div>
+    <div class="col d-flex justify-content-center">
 
+    </div>
+    <div class="col d-flex justify-content-center">
+        <h4>Empleados</h4>
+    </div>
+    <div class="col d-flex justify-content-center">
+
+    </div>
+    <div class="col d-flex justify-content-center">
+        <h4>Proveedores</h4>
+    </div>
+</div>
+<br>
+<br>
 @*Division*@
 <div class="row m-4"></div>
 
@@ -54,7 +78,7 @@
     </div>
     <div class="col d-flex justify-content-center">
         <a asp-controller="Inventario" asp-action="InventarioList" class="btn custom-btn"><i type="v60-2654"
-                class="cIcon cIcon-v60-2654" title="custicon">
+                class="cIcon cIcon-v60-2654" title="Inventario">
                 <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" fill="#FFFFFF"
                     viewBox="0 0 1024 1024">
                     <path
@@ -68,7 +92,7 @@
     </div>
     <div class="col d-flex justify-content-center">
         <a asp-controller="Clientes" asp-action="ClientesList" class="btn custom-btn">
-            <i type="fa-regular-17393" class="cIcon cIcon-fa-regular-17393" title="custicon">
+            <i type="fa-regular-17393" class="cIcon cIcon-fa-regular-17393" title="Clientes">
                 <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" fill="#FFFFFF"
                     viewBox="0 0 1024 1024">
                     <path
@@ -81,3 +105,25 @@
 
     </div>
 </div>
+@*Nombres*@
+<div class="row">
+    <div class="col d-flex justify-content-center">
+
+    </div>
+    <div class="col d-flex justify-content-center">
+        <h4>Inventario</h4>
+    </div>
+    <div class="col d-flex justify-content-center">
+
+    </div>
+    <div class="col d-flex justify-content-center">
+        <h4>Clientes</h4>
+    </div>
+    <div class="col d-flex justify-content-center">
+
+    </div>
+</div>
+    </div>
+</body>
+
+

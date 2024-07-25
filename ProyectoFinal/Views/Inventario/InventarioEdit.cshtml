@@ -4,8 +4,15 @@
     ViewData["Title"] = "Editar el Producto";
 }
 
-<h1>Editar el Producto</h1>
+<div class="col text-right">
+    <p class="label-gris" style="font-size:160%;">Editar el Producto</p>
+</div>
 
+<head>
+    <link rel="stylesheet" href="~/css/Inventarios-style.css" />
+</head>
+
+<div class="container" style="width: 70%;">
 <form asp-action="InventarioEdit" asp-controller="Inventario">
     
     <div class="form-floating mb-3">
@@ -42,7 +49,9 @@
                     <option value="">Seleccionar Proveedor</option>
                 </select>
     </div>
-    
+    <div class="buttons">
     <button class="btn btn-outline-primary">Guardar</button>
     <a class="btn btn-outline-secundary" asp-action="InventarioList" asp-controller="Inventario">Regresar</a>
+    </div>
 </form>
+</div>

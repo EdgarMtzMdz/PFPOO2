@@ -5,6 +5,10 @@
     ViewData["Title"] = "Borrar Cliente";
 }
 
+<head>
+    <link rel="stylesheet" href="~/css/Clientes-style.css" />
+</head>
+
 
 <h3 class="mb-3"></h3>
 
@@ -17,9 +21,11 @@
         <p class="card-text">Cliente: @Model.nombreClientes</p>
         </div>
     </div>
+    <br>
 
-
+    <div class="buttons">
     <input type="hidden" asp-for="idClientes"/>
     <button type="submit" class="btn btn-danger">Borrar</button>
     <a class="btn btn-secondary" asp-action="ClientesList" asp-controller="Clientes">Cancelar</a>
+    </div>
 </form>

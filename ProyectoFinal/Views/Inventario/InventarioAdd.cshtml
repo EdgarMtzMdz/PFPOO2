@@ -8,66 +8,11 @@
 <html>
 <head>
     <title>@ViewData["Title"]</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: url('/imagenes/fondo.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        .container {
-            width: 60%;
-            margin: 0 auto;
-            padding: 20px;
-            background: rgba(255, 230, 191, 0.588);
-            border-radius: 10px;
-            margin-top: 50px;
-        }
-        .form-label {
-            display: block;
-            margin-top: 10px;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        .form-control {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        .form-select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        .text-danger {
-            color: red;
-            font-size: 0.9em;
-        }
-        .buttons {
-            display: flex;
-            justify-content: flex-end;
-        }
-        .buttons button, .buttons a {
-            margin-left: 10px;
-            padding: 10px 20px;
-            border: none;
-            background-color: #8B4513;
-            color: white;
-            cursor: pointer;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .buttons button:hover, .buttons a:hover {
-            background-color: #A0522D;
-        }
-    </style>
+    <link rel="stylesheet" href="~/css/Inventarios-style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>@ViewData["Title"]</h1>
+    <div class="container" style="width: 70%;">
+        <p class="label-gris" style="font-size:160%;">@ViewData["Title"]</p>
         <form asp-controller="Inventario" asp-action="InventarioAdd" method="post">
             <div class="mb-3">
                 <label for="codBarras" class="form-label">Código de Barras</label>

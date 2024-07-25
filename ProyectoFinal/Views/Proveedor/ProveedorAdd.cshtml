@@ -4,7 +4,13 @@
     ViewData["Title"]= "Proveedor";
 }
 
-<h1>@ViewData["Title"]</h1>
+<head>
+    <link rel="stylesheet" href="~/css/Proveedores-style.css" />
+</head>
+
+<div class="col text-right">
+    <p class="label-gris" style="font-size:160%;">@ViewData["Title"]</p>
+</div>
 
 <form asp-action="ProveedorAdd" asp-controller="Proveedor">
 
@@ -19,8 +25,10 @@
         <label asp-for="codProveedor">Codigo de Proveedor</label>
         <span asp-validation-for="codProveedor" class="text-danger"></span>
     </div>
+    <div class="buttons">
     <button class="btn btn-outline-primary" type="submit">Guardar</button>
     <a class="btn btn-outline-secundary" asp-action="ProveedorList" asp-controller="Proveedor">Regresar</a>
+    </div>
 </form>
 
 

@@ -1,0 +1,24 @@
+body {
+    background-color: #fffcef; 
+}
+
+.row.m-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+.buttons button, .buttons a {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #8B4513;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.buttons button:hover, .buttons a:hover {
+    background-color: #3d2501bb;
+}

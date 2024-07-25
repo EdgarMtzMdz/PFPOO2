@@ -5,10 +5,13 @@
     ViewData["Title"] = "Borrar Producto";
 }
 
+<head>
+    <link rel="stylesheet" href="~/css/Inventarios-style.css" />
+</head>
 
 <h3 class="mb-3"></h3>
 
-
+<div class="container" style="width: 70%;">
 <form asp-controller="Inventario" asp-action="InventarioDeleted">
     <div class="card" style="width 18rem;">
         <div class="card-body">
@@ -18,8 +21,10 @@
         </div>
     </div>
 
-
+    <div class="buttons">
     <input type="hidden" asp-for="codBarras"/>
     <button type="submit" class="btn btn-danger">Borrar</button>
     <a class="btn btn-secondary" asp-action="InventarioList" asp-controller="Inventario">Cancelar</a>
+    </div>
 </form>
+</div>
